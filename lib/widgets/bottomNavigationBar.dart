@@ -65,26 +65,26 @@ class _CustomBottomNavigationBarState extends State {
         BubbleBottomBarItem(
           backgroundColor: Colors.deepPurple,
           icon: Icon(
-            Icons.access_time,
+            Icons.card_travel,
             color: Colors.black,
           ),
           activeIcon: Icon(
-            Icons.access_time,
+            Icons.card_travel,
             color: Colors.deepPurple,
           ),
-          title: Text('Log'),
+          title: Text('Carts'),
         ),
         BubbleBottomBarItem(
           backgroundColor: Colors.indigo,
           icon: Icon(
-            Icons.folder_open,
+            Icons.supervisor_account,
             color: Colors.black,
           ),
           activeIcon: Icon(
-            Icons.folder_open,
+            Icons.supervisor_account,
             color: Colors.indigo,
           ),
-          title: Text('Folders'),
+          title: Text('Profile'),
         ),
       ],
     );
