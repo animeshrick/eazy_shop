@@ -1,4 +1,4 @@
-import 'package:eazy_shop/profile/profile_info.dart';
+import 'package:eazy_shop/splash_screen/splash_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +11,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: ProfileInfo(),
+      home: SplashScreen(),
+      //home: ProfileInfo(),
     );
   }
 }
