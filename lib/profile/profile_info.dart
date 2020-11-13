@@ -45,103 +45,104 @@ class ProfileInfo extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
-        children: [
-          Container(
-              height: _height * .2,
-              decoration: new BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: new DecorationImage(
-                      fit: BoxFit.contain,
-                      image: new NetworkImage(
-                          "https://www.woolha.com/media/2019/06/buneary.jpg")))),
-          SizedBox(
-            height: 10,
-          ),
-          TextFormField(
-            decoration: const InputDecoration(
-              border: InputBorder.none,
-              filled: true,
-              suffixIcon: Icon(Icons.contact_mail),
-              suffixIconConstraints: BoxConstraints(
-                minHeight: 32,
-                minWidth: 32,
-              ),
-              labelText: 'Email / Phone No. *',
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+                height: _height * .2,
+                decoration: new BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: new DecorationImage(
+                        fit: BoxFit.contain,
+                        image: AssetImage("assets/profile.jpg")))),
+            SizedBox(
+              height: 10,
             ),
-          ),
-          SizedBox(
-            height: 5,
-          ),
-          TextFormField(
-            decoration: const InputDecoration(
-              border: InputBorder.none,
-              filled: true,
-              suffixIcon: Icon(Icons.person),
-              suffixIconConstraints: BoxConstraints(
-                minHeight: 32,
-                minWidth: 32,
+            TextFormField(
+              decoration: const InputDecoration(
+                border: InputBorder.none,
+                filled: true,
+                suffixIcon: Icon(Icons.contact_mail),
+                suffixIconConstraints: BoxConstraints(
+                  minHeight: 32,
+                  minWidth: 32,
+                ),
+                labelText: 'Email / Phone No. *',
               ),
-              labelText: 'UserName *',
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          TextFormField(
-            obscureText: true,
-            decoration: const InputDecoration(
-              border: InputBorder.none,
-              filled: true,
-              suffixIcon: Icon(Icons.lock_clock),
-              suffixIconConstraints: BoxConstraints(
-                minHeight: 32,
-                minWidth: 32,
+            SizedBox(
+              height: 5,
+            ),
+            TextFormField(
+              decoration: const InputDecoration(
+                border: InputBorder.none,
+                filled: true,
+                suffixIcon: Icon(Icons.person),
+                suffixIconConstraints: BoxConstraints(
+                  minHeight: 32,
+                  minWidth: 32,
+                ),
+                labelText: 'UserName *',
               ),
-              labelText: 'Password *',
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          TextFormField(
-            obscureText: true,
-            decoration: const InputDecoration(
-              border: InputBorder.none,
-              filled: true,
-              suffixIcon: Icon(Icons.lock_clock),
-              suffixIconConstraints: BoxConstraints(
-                minHeight: 32,
-                minWidth: 32,
+            SizedBox(
+              height: 10,
+            ),
+            TextFormField(
+              obscureText: true,
+              decoration: const InputDecoration(
+                border: InputBorder.none,
+                filled: true,
+                suffixIcon: Icon(Icons.lock_clock),
+                suffixIconConstraints: BoxConstraints(
+                  minHeight: 32,
+                  minWidth: 32,
+                ),
+                labelText: 'Password *',
               ),
-              labelText: 'Confirm Password *',
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          TextFormField(
-            obscureText: true,
-            decoration: const InputDecoration(
-              border: InputBorder.none,
-              filled: true,
-              suffixIcon: Icon(Icons.account_balance_outlined),
-              suffixIconConstraints: BoxConstraints(
-                minHeight: 32,
-                minWidth: 32,
+            SizedBox(
+              height: 10,
+            ),
+            TextFormField(
+              obscureText: true,
+              decoration: const InputDecoration(
+                border: InputBorder.none,
+                filled: true,
+                suffixIcon: Icon(Icons.lock_clock),
+                suffixIconConstraints: BoxConstraints(
+                  minHeight: 32,
+                  minWidth: 32,
+                ),
+                labelText: 'Confirm Password *',
               ),
-              labelText: 'Address *',
             ),
-          ),
-          RaisedButton(
-            color: Colors.cyan,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
-                side: BorderSide(color: Colors.white)),
-            onPressed: () {},
-            child: Text('Save Details'),
-          )
-        ],
+            SizedBox(
+              height: 10,
+            ),
+            TextFormField(
+              obscureText: true,
+              decoration: const InputDecoration(
+                border: InputBorder.none,
+                filled: true,
+                suffixIcon: Icon(Icons.account_balance_outlined),
+                suffixIconConstraints: BoxConstraints(
+                  minHeight: 32,
+                  minWidth: 32,
+                ),
+                labelText: 'Address *',
+              ),
+            ),
+            RaisedButton(
+              color: Colors.cyan,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0),
+                  side: BorderSide(color: Colors.white)),
+              onPressed: () {},
+              child: Text('Save Details'),
+            )
+          ],
+        ),
       ),
     );
   }

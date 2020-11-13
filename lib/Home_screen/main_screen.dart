@@ -36,7 +36,7 @@ class _MainScreenState extends State<MainScreen> {
       type: BottomNavigationBarType.fixed,
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          icon: Icon(Icons.offline_bolt),
+          icon: Icon(Icons.home_outlined),
           title: Text(''),
         ),
         BottomNavigationBarItem(
