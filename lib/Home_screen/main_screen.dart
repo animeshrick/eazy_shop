@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '../Folders.dart';
 import 'home_view.dart';
 
-List _widgetOptions = [HomeView(), ProfileInfo(), Cart(), Folders()];
+List _widgetOptions = [HomeView(), Cart(), Folders(), ProfileInfo()];
 
 class MainScreen extends StatefulWidget {
   @override
@@ -34,36 +34,27 @@ class _MainScreenState extends State<MainScreen> {
   Widget getBottomNavBar() {
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
-      backgroundColor: Colors.grey[900],
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.offline_bolt),
-          title: Text('Shorts'),
+          title: Text(''),
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.graphic_eq),
-          title: Text('Activity'),
+          icon: Icon(Icons.add_shopping_cart),
+          title: Text(''),
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.cloud_upload),
-          title: Text('Upload'),
+          icon: Icon(Icons.message),
+          title: Text(''),
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.email),
-          title: Text('Messages'),
-        ),
-        BottomNavigationBarItem(
-//                activeIcon: IconButton(
-//                  onPressed: null,
-//                  icon: Icon(Icons.hourglass_full),
-//                ),
-          icon: Icon(Icons.menu),
-          title: Text('More'),
+          icon: Icon(Icons.supervisor_account_outlined),
+          title: Text(''),
         ),
       ],
       currentIndex: _selectedIndex,
-      selectedItemColor: Colors.white,
-      unselectedItemColor: Colors.grey,
+      selectedItemColor: Colors.black,
+      unselectedItemColor: Colors.blue,
       onTap: _onItemTapped,
     );
   }

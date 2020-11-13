@@ -126,20 +126,6 @@ class _HomeViewState extends State<HomeView> {
                   ),
                 ],
               ),
-              ListView.builder(
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 20,
-                  itemBuilder: (BuildContext ctx, index) {
-                    return Row(
-                      children: [
-                        Image.asset(listViewImage),
-                        SizedBox(
-                          width: 10,
-                        )
-                      ],
-                    );
-                  })
             ],
           ),
         ));

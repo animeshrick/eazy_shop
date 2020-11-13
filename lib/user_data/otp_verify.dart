@@ -1,4 +1,5 @@
 import 'package:eazy_shop/Home_screen/home_view.dart';
+import 'package:eazy_shop/Home_screen/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:otp_text_field/otp_text_field.dart';
 
@@ -41,7 +42,7 @@ class OTPVerification extends StatelessWidget {
           ),
           InkWell(
             onTap: () => Navigator.push(
-                context, MaterialPageRoute(builder: (ctx) => HomeView())),
+                context, MaterialPageRoute(builder: (ctx) => MainScreen())),
             child: new Container(
               height: MediaQuery.of(context).size.height * 0.1,
               decoration: new BoxDecoration(
